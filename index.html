@@ -1,152 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TMF Management Services — Coming Soon</title>
-  <meta name="description" content="TMF Management Services specializes in excess funds recovery. Our website is coming soon." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice Grid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #020617, #020617);
-      color: #f8fafc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-    .container {
-      max-width: 1000px;
-      width: 100%;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 20px;
-      padding: 40px;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 40px;
-    }
-    .logo {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: #4f46e5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-    }
-    h1 {
-      font-size: 42px;
-      margin-bottom: 16px;
-      line-height: 1.1;
-    }
-    p {
-      color: #cbd5e1;
-      margin-bottom: 16px;
-      line-height: 1.6;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-    }
-    @media (max-width: 800px) {
-      .grid { grid-template-columns: 1fr; }
-    }
-    .card {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 16px;
-      padding: 24px;
-    }
-    form {
-      margin-top: 24px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    input {
-      flex: 1;
-      padding: 14px 16px;
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.15);
-      background: #020617;
-      color: white;
-      font-size: 16px;
-    }
-    button {
-      padding: 14px 20px;
-      border-radius: 10px;
-      border: none;
-      background: #4f46e5;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    button:hover { background: #6366f1; }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      color: #94a3b8;
-      font-size: 14px;
-    }
+ 
   </style>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <div class="logo">TMF</div>
-      <div>
-        <strong>TMF Management Services</strong><br />
-        <span style="color:#94a3b8; font-size:14px;">Excess Funds Recovery</span>
+<nav class="navbar navbar-dark text-center mb-3 fixed-top">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="https://sockmonkeyy.github.io/blackJack/">JS BlackJack</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Wayne's World</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                      <a class="nav-link"
+                          href="https://sockmonkeyy.github.io/numberGuessing">Numbers
+                          Game</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://sockmonkeyy.github.io/basicquiz/">Basic Quiz</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://sockmonkeyy.github.io/QuickQuiz/">Web Dev Quiz</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://sockmonkeyy.github.io/myRPS/">Rock, Paper, Scissors</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://sockmonkeyy.github.io/poke/">Pokemon Match</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://sockmonkeyy.github.io/ttt/">Tic Tac Toe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://sockmonkeyy.github.io/crapsGame/">Craps</a>
+                </li>
+                 
+          </div>
       </div>
-    </header>
-
-    <div class="grid">
-      <div>
-        <h1>Recover What’s Rightfully Yours</h1>
-        <p>
-          TMF Management Services specializes in <strong>excess funds recovery</strong>, helping individuals and businesses reclaim money left behind after foreclosure and tax sales.
-        </p>
-        <p>
-          Our full website is coming soon. Leave your email and we’ll reach out to see if we can help.
-        </p>
-
-        <form onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.');">
-          <input type="email" required placeholder="Enter your email" />
-          <button type="submit">Notify Me</button>
+  </div>
+</nav>
+     <body class="pt-4">
+        <div class="container mt-5 mb-5">
+        <h1 class="neonText col-sm-4">
+            Black Jack
+           </h1>
+            <div class="row mt-5 mb-3 container score justify-content-center d-flex text-center">
+         <p> Score: </p>
+         <div class="col-4" id="player-score"></div>
+         <div class="col-4" id="dealer-score"></div> 
+        </div>
+        <div style="display: none;" class="container" id="cards">
+       
+         <div id="dealer-cards"></div>
+         <br>
+         <div id="player-cards"></div>
+         <br>
+        </div>
+    
+<div class="container text-center d-flex justify-content-center">
+         <form name="blackjack" class="" onSubmit="newGame(); return false;">
+         <input type='submit' class="m-2 custom-btn btn-1" id='new-game-button' value='Deal'/>
+         <input type='button' class="m-2 custom-btn btn-1" id='hit-button' value='Hit' onclick='hit();' disabled/>
+         <input type='button' class="custom-btn2 btn-2" id='stand-button' value='Stand' onclick='stand();' disabled/>
+       
+         <div style="font-size: 2rem;" class="d-flex mb-3 justify-content-center" id=player-money></div>
+        <div style="font-size: 2rem;"> Bet: </div>
+         <input type='number' style="font-size: 1.5rem;" class="rounded" id='bet' value='' min='1' max=""/>
         </form>
-
-        <p style="margin-top:20px; font-size:14px; color:#94a3b8;">✔ No upfront fees in most cases &nbsp; ✔ We handle the paperwork &nbsp; ✔ Fast, professional service</p>
-      </div>
-
-      <div class="card">
-        <h2 style="margin-bottom:12px;">What are Excess Funds?</h2>
-        <p>
-          When a property is sold at foreclosure or tax sale, it sometimes sells for more than what is owed. The extra money is called <strong>excess funds</strong>.
-        </p>
-        <p>
-          Many former owners never realize this money is waiting to be claimed. We help locate, document, and recover those funds for you.
-        </p>
-        <p style="margin-top:16px; padding:12px; background:#020617; border-radius:10px;">
-          <strong>Our mission:</strong> Make the recovery process simple, transparent, and stress-free.
-        </p>
-      </div>
     </div>
 
-    <footer>
-      © <span id="year"></span> TMF Management Services. All rights reserved.
-    </footer>
-  </div>
+    <div class="row mt-5 mb-3 container score justify-content-center d-flex text-center">
+         <h2 id="message-board"></h2>
+        </div>
+    
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+         crossorigin="anonymous"></script>
+       <script src="app.js"></script>
+     </body>
+     
+     </html>
