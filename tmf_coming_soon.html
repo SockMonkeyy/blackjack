@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TMF Management Services — Coming Soon</title>
+  <meta name="description" content="TMF Management Services specializes in excess funds recovery. Our website is coming soon." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    html { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100">
+  <!-- Background gradient -->
+  <div class="absolute inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-indigo-600/20 blur-3xl"></div>
+    <div class="absolute top-1/3 -left-40 h-96 w-96 rounded-full bg-cyan-500/20 blur-3xl"></div>
+  </div>
+
+  <main class="mx-auto max-w-6xl px-6 py-16">
+    <header class="flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white font-extrabold">TMF</div>
+        <div class="font-semibold tracking-tight">TMF Management Services</div>
+      </div>
+    </header>
+
+    <section class="mt-20 grid gap-12 md:grid-cols-2 md:items-center">
+      <div>
+        <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1 text-sm text-slate-200">Launching Soon</span>
+        <h1 class="mt-6 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+          Recover What’s Rightfully Yours
+        </h1>
+        <p class="mt-6 max-w-xl text-lg text-slate-300">
+          TMF Management Services specializes in <span class="text-white font-semibold">excess funds recovery</span> — helping individuals and businesses reclaim money left behind after foreclosure, tax sales, and other proceedings.
+        </p>
+        <p class="mt-4 max-w-xl text-slate-400">
+          Our full website is on the way. In the meantime, leave your contact information and we’ll reach out.
+        </p>
+
+        <!-- Simple contact form (non-functional placeholder) -->
+        <form class="mt-8 flex max-w-md flex-col gap-4 sm:flex-row" onsubmit="event.preventDefault(); alert('Thank you! We will be in touch soon.');">
+          <input
+            type="email"
+            required
+            placeholder="Enter your email"
+            class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+          <button
+            type="submit"
+            class="rounded-xl bg-indigo-600 px-6 py-3 font-semibold text-white shadow-lg shadow-indigo-600/30 transition hover:bg-indigo-500"
+          >
+            Notify Me
+          </button>
+        </form>
+
+        <div class="mt-8 flex flex-wrap gap-6 text-sm text-slate-400">
+          <div class="flex items-center gap-2">✔ Fast, professional recovery</div>
+          <div class="flex items-center gap-2">✔ No upfront fees (in most cases)</div>
+          <div class="flex items-center gap-2">✔ We handle the paperwork</div>
+        </div>
+      </div>
+
+      <!-- Right side card -->
+      <div class="relative">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur">
+          <h3 class="text-xl font-semibold">What are Excess Funds?</h3>
+          <p class="mt-4 text-slate-300">
+            When a property is sold at foreclosure or tax sale, it sometimes sells for more than what is owed. The extra money — called <strong>excess funds</strong> — may still belong to the former owner or other entitled parties.
+          </p>
+          <p class="mt-4 text-slate-300">
+            Many people never realize this money is waiting to be claimed. We help locate, document, and recover those funds on your behalf.
+          </p>
+          <div class="mt-6 rounded-2xl bg-slate-900/60 p-4 text-sm text-slate-300">
+            <strong>Our mission:</strong> Make the recovery process simple, transparent, and stress-free.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-24 border-t border-white/10 pt-8 text-sm text-slate-500">
+      <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <div>© <span id="year"></span> TMF Management Services. All rights reserved.</div>
+        <div class="flex gap-6">
+          <span>tmfmanagementservices.com</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
